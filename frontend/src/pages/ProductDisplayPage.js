@@ -297,7 +297,7 @@ const ProductDisplayPage = ({ isAuthenticated, user, onLogout, onShowLogin, onSh
 
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://zen-site.onrender.com/api/orders', {
+      const response = await fetch('https://zen-site.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
