@@ -32,7 +32,7 @@ const ProductDisplayPage = ({ isAuthenticated, user, onLogout, onShowLogin, onSh
     setLoading(true);
     setError('');
     try {
-      let url = 'http://localhost:8080/api/products/all';
+      let url = 'https://zen-site.onrender.com/api/products/all';
       
       console.log('Fetching products from:', url);
       
