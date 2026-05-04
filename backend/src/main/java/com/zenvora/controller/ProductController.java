@@ -15,7 +15,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "https://zen-site.onrender.com", allowCredentials = "true")
+@CrossOrigin(origins = {"https://zen-site.onrender.com", "https://your-vercel-domain.vercel.app"}, 
+             allowCredentials = "true",
+             allowedHeaders = "*",
+             methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE, RequestMethod.PATCH})
 public class ProductController {
 
     @Autowired
